@@ -1,0 +1,57 @@
+
+main {
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+	margin: 0 auto;
+}
+#project_graphics {
+	top: 0;
+	right: 0;
+	position: absolute;
+	width: 450px;
+	margin-left: auto;
+	scroll-snap-type: y mandatory;
+}
+
+#project_graphics svg {
+	position: fixed;
+	scroll-snap-align: start;
+	margin-top: calc(50vh - 90px);
+	z-index: 1;
+}
+
+#project_graphics svg:nth-child(2) {
+	margin-top: calc(50vh - 80px);
+	margin-left: 10px;
+}
+
+#project_graphics svg:nth-child(3) {
+	margin-top: calc(50vh - 70px);
+	margin-left: 20px;
+}
+
+#project_graphics svg:nth-child(4) {
+	margin-top: calc(50vh - 60px);
+	margin-left: 30px;
+}
+
+#project_graphics svg:nth-child(5) {
+	margin-top: calc(50vh - 50px);
+	margin-left: 40px;
+}
+
+.project {
+	opacity: 0;
+	filter: blur(5px);
+	transition: opacity 1s, filter 3s;
+	height: 90vh;
+	margin-bottom: calc(10vh + 20px);
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+}
+
+.active {
+	opacity: 1;
+	filter: blur(0);
+}
