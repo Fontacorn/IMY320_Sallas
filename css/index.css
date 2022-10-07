@@ -3,8 +3,8 @@ main {
 	overflow: auto;
 	scroll-snap-type: y mandatory;
 	height: 100vh;
-	margin: 0 auto;
 }
+
 #project_graphics {
 	top: 0;
 	right: 0;
@@ -12,13 +12,15 @@ main {
 	width: 450px;
 	margin-left: auto;
 	scroll-snap-type: y mandatory;
+	z-index: 1;
 }
 
 #project_graphics svg {
+	/* width: 10vw;
+	height: 10vw; */
 	position: fixed;
 	scroll-snap-align: start;
 	margin-top: calc(50vh - 90px);
-	z-index: 1;
 }
 
 #project_graphics svg:nth-child(2) {
