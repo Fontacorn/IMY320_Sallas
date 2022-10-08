@@ -5,6 +5,10 @@ main {
 	height: 100vh;
 }
 
+#project-intro {
+	height: 100vh;
+}
+
 #project_graphics {
 	top: 0;
 	right: 0;
@@ -47,8 +51,7 @@ main {
 	opacity: 0;
 	filter: blur(5px);
 	transition: opacity 1s, filter 3s;
-	height: 90vh;
-	margin-bottom: calc(10vh + 20px);
+	height: 100vh;
 	scroll-snap-align: center;
 	scroll-snap-stop: always;
 }
