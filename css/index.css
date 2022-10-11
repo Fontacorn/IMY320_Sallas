@@ -60,3 +60,7 @@ main {
 	opacity: 1;
 	filter: blur(0);
 }
+
+#logoAnimation {
+	height: 100vh;
+}
