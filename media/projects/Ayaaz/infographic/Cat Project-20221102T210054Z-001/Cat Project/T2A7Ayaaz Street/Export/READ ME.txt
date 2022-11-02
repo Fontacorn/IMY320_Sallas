@@ -1,0 +1,1 @@
+To view the published website open it on a web server like XAMPP or Visual Studio Live Server 
