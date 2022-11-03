@@ -1627,7 +1627,6 @@ label {
   padding-bottom: 4px;
   
 }
-
 .float-container.active, .float-container:hover {
   outline-width: 2px;
 }
@@ -2032,4 +2031,17 @@ textarea{
   outline:0;
   border:0;
   color: whitesmoke;
+  margin-top:4%;
+  font-size:16px;
+}
+
+
+#floatContainer3 textarea:active + label
+{
+
+  color:var(--coral);
+}
+button{
+  padding: 14px 12px;
+  border:0;
 }
