@@ -36,7 +36,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+      ScrollReveal({
+          reset: true
+      });
+  </script>
 </head>
 
 <body>
@@ -48,7 +54,7 @@
   <section id="navigation">
 
     <div class="nav">
-      <a href="../index.html">
+      <a href="../#projects">
         <div class="nav-opt">Back</div>
       </a>
 
@@ -225,6 +231,9 @@
         smooth: true
       });
     })();
+  </script>
+  <script>
+    ScrollReveal().reveal('.proj-top',  { delay: 250 });
   </script>
 </body>
 
