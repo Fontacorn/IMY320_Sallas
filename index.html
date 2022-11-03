@@ -611,8 +611,8 @@
                                         <div class="row align-items-center form2">
                                             <div id="floatContainer3" class="float-container col m-2">
                                                 <label for="message">Message</label>
-                                                <!-- <input type="text" id="message" data-placeholder="Hi..." required> -->
-                                        <textarea rows="5" placeholder="Your message" required class="textarea"></textarea>
+                                                <input type="text" id="message" data-placeholder="Hi..." required>
+                                        <!-- <textarea rows="5" placeholder="Your message" required class="textarea" id="message"></textarea> -->
                                             
                                             </div>
                                         </div>
@@ -625,12 +625,19 @@
                                     </form>
                                 </div>
                             </div>
-                            <!-- <div class="popup" id="popup">
-        <h1>Thank You!</h1>
-        <p>Your message has been sent, see you soon ;)</p>
-        <button type="button" class="btn" onclick="closePopup()">OK</button>
-    </div> -->
+                            <div class="popup" id="popup">
+                                <h1>Thank You!</h1>
+                                <p>Your message has been sent, see you soon ;)</p>
+                                <button type="button" class="btn" onclick="closePopup()">OK</button>
+                            </div>
                         </section>
+
+
+                        <!-- <div class="popup" id="popup">
+                            <h1>Thank You!</h1>
+                            <p>Your message has been sent, see you soon ;)</p>
+                            <button type="button" class="btn" onclick="closePopup()">OK</button>
+                        </div> -->
 
                         <!-- <section id="contact">
                         <div class="container">
@@ -775,7 +782,8 @@
                 <input type="text" placeholder="Name" required />
                 <input type="email" placeholder="Email" required />
                 <textarea rows="3" placeholder="Your message" required></textarea>
-                <button>Send</button>
+                <button type="button" id="submitBtn" class="btn px-3 py-2">Send
+                    Message</button>
             </form>
         </div>
 

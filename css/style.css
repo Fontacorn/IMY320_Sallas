@@ -2063,3 +2063,43 @@ button{
 {
   color: var(--ant);
 }
+
+
+.popup {
+  width: auto;
+  background-color: #EB6B4D;
+  position: absolute;
+  left: 50%;
+  top: 435%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  height: fit-content;
+  border: 5px solid #FAEBD7;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 1000000;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 500%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup>h1, .popup>p {
+  margin: 10%;
+  margin-bottom: 0;
+}
+
+.popup>p {
+  margin-top: 2%;
+  margin-bottom: 30px;
+}
+
+.popup>button {
+  padding: 1% 2.5%;
+  margin-bottom: 10%;
+  background-color: #FAEBD7;
+  color: #EB6B4D;
+  border-radius: 0%;
+}
