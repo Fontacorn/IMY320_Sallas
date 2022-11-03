@@ -2010,3 +2010,13 @@ background: linear-gradient(to right, #24243e,var(--coral),#302b63, #0D1B2A); /*
   /* height: 1000px; */
 }
 
+
+.pseudo-item a{
+  /* border: red solid thick; */
+}
+
+.pseudo-item a img{
+  /* border: green solid thick; */
+  width: 100%;
+  height: 100%;
+}
