@@ -225,15 +225,15 @@ ScrollReveal().reveal('.pseudo-item-1');
 ScrollReveal().reveal('.pseudo-item-2',  { delay: 200 });
 ScrollReveal().reveal('.pseudo-item-3',  { delay: 250 });
 ScrollReveal().reveal('.pseudo-item-4',  { delay: 300 });
-ScrollReveal().reveal('.pseudo-item-5',  { delay: 350 });
-ScrollReveal().reveal('.pseudo-item-6',  { delay: 400 });
+// ScrollReveal().reveal('.pseudo-item-5',  { delay: 350 });
+// ScrollReveal().reveal('.pseudo-item-6',  { delay: 400 });
 // ScrollReveal().reveal('.pseudo-item-7',  { delay: 450 });
 // ScrollReveal().reveal('.pseudo-item-8',  { delay: 500 });
 // ScrollReveal().reveal('.pseudo-item-9',  { delay: 550 });
 // ScrollReveal().reveal('.pseudo-item-10',  { delay: 600 });
 
 
-ScrollReveal().reveal('.header-text',  { delay: 250 });
+ScrollReveal().reveal('.header-text',  { delay: 450 });
 ScrollReveal().reveal('.what-we-do',  { delay: 200 });
 ScrollReveal().reveal('.what-we-do-info',  { delay: 350 });
 

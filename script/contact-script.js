@@ -106,3 +106,57 @@ document.getElementById("message").onblur = function () {
         validMessage = false;
     }
 }
+
+//Declaring variables:
+let fname2, email2, message2, button2;
+let validName2 = false, validEmail2 = false, validMessage2 = false;
+
+//Checks if all elements are valid before submitting:
+button2 = document.getElementById("submitBtn2");
+button2.onclick = function () {
+    if (validName2 == true && validEmail2 == true && validMessage2 == true) {
+        fname2 = document.getElementById("name2");
+        fname2.value = "";
+        fname2.parentNode.classList.remove('active');
+        email2 = document.getElementById("email2");
+        email2.value = "";
+        email2.parentNode.classList.remove('active');
+        message2 = document.getElementById("message2");
+        message2.value = "";
+        message2.parentNode.classList.remove('active');
+        openPopup();
+    } else {
+        document.getElementById("submitMessage").innerHTML = "Make sure all form fields are filled";
+        return false;
+    }       
+}
+
+//Validates that the nameField is longer than 2 characters:
+document.getElementById("name2").onblur = function () {
+    fname2 = document.getElementById("name2").value;
+    if (fname2.length > 3) {
+        validName2 = true;
+    } else {
+        validName2 = false;
+    }
+}
+
+//Validates that the emailField contains a '@' and '.' symbol:
+document.getElementById("email2").onblur = function () {
+    email2 = document.getElementById("email2").value;
+    if (email2.indexOf("@") == -1 || email2.indexOf(".") == -1) {
+        validEmail2 = false;
+    } else {
+        validEmail2 = true;
+    }
+}
+
+//Validates that the nameField is longer than 2 characters:
+document.getElementById("message2").onblur = function () {
+    message2 = document.getElementById("message2").value;
+    if (message2.length > 0) {
+        validMessage2 = true;
+    } else {
+        validMessage2 = false;
+    }
+}
